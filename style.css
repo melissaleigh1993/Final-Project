@@ -1,12 +1,15 @@
 * {
   text-align: center;
   text-decoration: none;
-  background-color: #87CEFA;
+}
+
+body {
+      background-color: #87CEFA;
 }
 
 [class*=index] {
   text-align: center;
-  font-family: Amatic SC;
+  font-family: Red Rose;
   font-size: 50px;
   background: linear-gradient(to bottom, 
        #0000CD 0%, #0000CD  25%, 
@@ -21,9 +24,23 @@
     padding: inherit;
 }
 
+.bg-blue {
+      background-color: #87CEFA;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+footer {
+    margin: auto;
+}
+
+
 h1 {
     color: #00FFFF;
 }
+
 
 h2 {
     font-family: Montserrat;
@@ -67,7 +84,7 @@ nav a {
   border-radius: 5px;
   border-color: black;
   text-transform: uppercase;
-  font-family: Jost;
+  font-family: Montserrat;
   background-color: blue;
   color: white;
   cursor: pointer;
@@ -146,7 +163,7 @@ color: blue;
   color: blue;
     border-color: black;
   text-transform: uppercase;
-  font-family: Jost;
+  font-family: Montserrat;
   background-color: #FFFAF0;
   margin: 1rem;
   padding: 0.5rem;
@@ -156,7 +173,7 @@ color: blue;
 
 .button:hover {
   text-transform: uppercase;
-  font-family: Jost;
+  font-family: Montserrat;
     transition: 1s ease-in-out;
     text-decoration: none;
     margin: 1rem;
