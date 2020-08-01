@@ -1,0 +1,311 @@
+* {
+  text-align: center;
+  text-decoration: none;
+  background-color: #87CEFA;
+}
+
+[class*=index] {
+  text-align: center;
+  font-family: Amatic SC;
+  font-size: 50px;
+  background: linear-gradient(to bottom, 
+       #0000CD 0%, #0000CD  25%, 
+       white 0%, white 75%,       
+       #0000CD 0%);
+  color: #00BFFF;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+
+[class*=col-6] {
+    text-align: center;
+    margin: auto;
+    padding: inherit;
+}
+
+h1 {
+    color: #00FFFF;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: Jost;
+    font-size: 36px;
+      text-shadow: 2px 2px grey;
+    
+}
+
+p {
+    text-align: justify;
+    font-family: Montserrat;
+    line-height: 1.5rem;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+img:hover {
+      opacity: 0.8;
+  transition: 0.3s;
+}
+
+nav a {
+  display: block;
+  padding: 12px;
+  border-style: solid 3rem;
+  border-radius: 5px;
+  border-color: black;
+  text-transform: uppercase;
+  font-family: Jost;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #0000CD;
+  transition: 1s ease-in-out;
+    text-decoration: none;
+}
+
+nav ul
+  {
+		   list-style: none;
+           padding: 0;
+           margin: 0;
+  }
+
+nav ul li {
+float: left;
+ list-style: none;
+position: relative;
+
+}
+
+nav ul li a {
+	text-decoration: none;
+  color: white;
+  background-color: blue;
+  padding: 1rem;
+    margin-right: 0.5rem;
+  display: block;
+  border: 1px solid black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.9rem;	
+  font-weight: 400;
+}
+
+nav ul li ul {
+	display: none;
+	position: absolute;
+	padding: 10px;
+	border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {
+	display: block;
+      transition: 1s ease-in-out;
+
+}
+
+nav ul li ul li {
+width: 125px;
+	border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li ul li a {
+	  padding: 1rem;
+
+}
+
+nav ul li ul li a:hover {
+color: blue;
+  border-color: blue;
+
+}
+
+.button {
+  text-decoration: none;
+  color: blue;
+    border-color: black;
+  text-transform: uppercase;
+  font-family: Jost;
+  background-color: #FFFAF0;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.button:hover {
+  text-transform: uppercase;
+  font-family: Jost;
+    transition: 1s ease-in-out;
+    text-decoration: none;
+    margin: 1rem;
+  padding: 0.5rem;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+
+/* background images */
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  border-radius: 3px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+      border-radius: 3px;
+}
+
+.fa-facebook {
+  color: white;
+    border-radius: 3px;
+    background-color: #3B5998;
+}
+
+.fa-instagram {
+    color: #C71585;
+    border-radius: 3px;
+    background-color: #125688;
+}
+
+.fa-twitter {
+   color: white;
+    border-radius: 3px;
+    background-color: #55ACEE;
+}
+
+.fa-globe {
+    color: blue;
+    border-radius: 3px;
+    background-color: #4CAF50;
+}
+
+.fa-youtube {
+    color: white;
+    border-radius: 3px;
+    background-color: #bb0000;
+}
+
+.contact-title{
+  margin-top: 100px;
+  color: #808080;
+text-transform: uppercase;
+text-align: center;
+
+}
+
+.contact-title h1 {
+  font-size: 32px;
+  font-family: 'Montserrat';
+  line-height: 10px;
+  padding: 2%;
+  text-align: center;
+
+}
+
+.contact-title h2 {
+  font-size: 24px;
+      font-family: 'Montserrat';
+  text-align: center;
+    color: black;
+}
+
+form {
+  margin-top: 50px;
+  font-size: 24 px;
+  text-align: center;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #708090;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 16px;
+    text-align: left;
+}
+
+input {
+  height: 45px;
+    font-size: 32px;
+  font-family: 'Montserrat';
+  line-height: 10px;
+    text-align: left;
+}
+
+textarea {
+    font-size: 32px;
+  font-family: 'Montserrat';
+  line-height: 10px;
+    text-align: left;
+}
+
+form .submit {
+  background: blue;
+border-color: transparent;
+color:  black;
+font-size: 20px;
+font-weight: bold;
+letter-spacing: 2px;
+height: 50px;
+margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form .submit:hover {
+  background-color: white;
+    color: black;
+      transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
