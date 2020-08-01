@@ -26,10 +26,18 @@ body {
 
 .bg-blue {
       background-color: #87CEFA;
+        padding: 10px;
+
 }
 
 .bg-white {
     background-color: white;
+    padding: 10px;
+}
+
+.map {
+    background-color: white;
+    padding: 10px;
 }
 
 footer {
@@ -44,7 +52,7 @@ h1 {
 
 h2 {
     font-family: Montserrat;
-    font-size: 42px;
+    font-size: 50px;
     font-weight: 600;
 }
 
@@ -148,7 +156,7 @@ width: 125px;
 }
 
 nav ul li ul li a {
-	  padding: 1rem;
+	  padding: 0.7rem;
 
 }
 
