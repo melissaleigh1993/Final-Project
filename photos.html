@@ -21,13 +21,16 @@
               <li><a href="about.html#itinerary">Itineraries</a></li>
               <li><a href="about.html#info">Important Info</a></li>
               </ul></li>
+            <li><a href="quiz.html">Quiz</a></li>
  <li><a href="photos.html">Photos</a>
 		            <li><a href="food.html">Food</a>
           <li><a href="neighborhoods.html">Neighborhoods</a>
 		  <ul>
               <li><a href="neighborhoods.html#downtown">Downtown</a></li>
               <li><a href="neighborhoods.html#carmel">Carmel Center</a></li>
+<li><a href="neighborhoods.html#german">German Colony</a></li>
               <li><a href="neighborhoods.html#hadar">Hadar</a></li>
+                <li><a href="neighborhoods.html#batgalim">Bat Galim</a></li>
               <li><a href="neighborhoods.html#hof">Hof HaCarmel</a></li>
               <li><a href="neighborhoods.html#neve">Neve Shanaan</a></li>
 
@@ -40,36 +43,50 @@
 <br>
       <br>
       <br>
-    <section class="grid">
 <br>
         <br>
+<br>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
 
-        <!--Photo album grid -->
-        <div id="slide">
-		<ul class="slides">
-<li class="slide"><img src="img/bahai1.jpg"></li>
-    <li class="slide"><img src="img/hummus.jpg"></li>
-    <li class="slide"><img src="img/beach.jpg"></li>
-    <li class="slide"><img src="img/bay.jpg"></li>
-    <li class="slide"><img src="img/knafe.jpg"></li>
-    <li class="slide"><img src="img/lavender.jpg"></li>
-    <li class="slide"><img src="img/bahai2.jpg"></li>
-    <li class="slide"><img src="img/blossom.jpg"></li>
-<li class="slide"><img src="img/holiday.jpg"></li>
-    <li class="slide"><img src="img/yogurt.jpg"></li>
-    <li class="slide"><img src="img/bluecave.jpg"></li>
-    <li class="slide"><img src="img/coffee.jpg"></li>
-    <li class="slide"><img src="img/bbs.jpg"></li>
-    <li class="slide"><img src="img/wave.jpg"></li>
-<li class="slide"><img src="img/bahai1.jpg"></li>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="img/wave.jpg" style="width:100%">
+    <div class="text">Hof HaCarmel</div>
+  </div>
 
-		</ul>
+  <div class="mySlides fade">
+    <img src="img/carmel.jpg" style="width:100%">
+    <div class="text">Carmel Center</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/tel-shikmona.jpg" style="width:100%">
+    <div class="text">Tel Shikmona</div>
+  </div>
+    
+    <div class="mySlides fade">
+    <img src="img/bay.jpg" style="width:100%">
+    <div class="text">Haifa Bay</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-        
-  </section>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+</div>
 <br>
     <br>
     <br>
+
     <footer class="bg-blue">
 <a href="contact.html" class=button>Contact</a>
 
@@ -80,10 +97,8 @@
         <a href="https://www.youtube.com/c/%D7%97%D7%99%D7%A4%D7%94%D7%97%D7%99%D7%A4%D7%94/" class="fa fa-youtube"></a>
 
     </footer>
-    
-<script src ="scripts/jquery-mirgate.1.4.1.js"></script>
-    <script src ="scripts/script.js"></script>
-    
+
+          <script src="main.js"></script>
   </body>
 
   </html>
