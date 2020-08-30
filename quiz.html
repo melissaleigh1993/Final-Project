@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Red+Rose:wght@300;400;700&Jost:wght@300;400;500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+    <header>
+<section class="bg-blue">
+     <div class="index">
+       <h1><a href="index.html">Welcome to Haifa</a><br>חֵיפָה - حيفا</h1>
+      </div>
+      <nav class="nav">
+          <ul>
+          <li><a href="about.html">About</a>
+              <ul>
+              <li><a href="about.html#plan">Planning</a></li>
+              <li><a href="about.html#itinerary">Itineraries</a></li>
+              <li><a href="about.html#info">Important Info</a></li>
+              </ul></li>
+<li><a href="quiz.html">Quiz</a></li>
+ <li><a href="photos.html">Photos</a>
+		            <li><a href="food.html">Food</a>
+          <li><a href="neighborhoods.html">Neighborhoods</a>
+		  <ul>
+              <li><a href="neighborhoods.html#downtown">Downtown</a></li>
+              <li><a href="neighborhoods.html#carmel">Carmel Center</a></li>
+<li><a href="neighborhoods.html#german">German Colony</a></li>
+              <li><a href="neighborhoods.html#hadar">Hadar</a></li>
+            <li><a href="neighborhoods.html#batgalim">Bat Galim</a></li>
+              <li><a href="neighborhoods.html#hof">Hof HaCarmel</a></li>
+              <li><a href="neighborhoods.html#neve">Neve Shanaan</a></li>
+
+ </ul>
+ </li>
+          </ul>
+      </nav>
+        </section>
+    </header>
+      <br>
+<br>
+<br>
+      <br>
+      <br>
+      
+      <!-- Quiz -->
+       <div class="container">
+        <div class="top">
+            <p class="quizTime"> Quiz Time! </p>
+        </div>
+        <div class="button-top">
+            <button id="start" onclick="start();"> Ready?? </button>
+        </div>
+    </div>
+    </div>
+
+    <div id="quiz" name="quiz">
+
+        <div class="container one">
+            <div class="questionOne display-none" id="questionOne">
+                <div class="left">
+                    <h2>Question ONE!</h2>
+                    <h4> What member of KISS was born in Haifa? </h4>
+                    <input type="textbox" name="question1" id="question1">
+                </div>
+                <br>
+            <button id="to_question2" onclick="to_question2();"> Next </button>
+            </div>
+        </div>
+
+        <div class="container two">
+            <div class="questionTwo display-none" id="questionTwo">
+                <h2>Question two!</h2>
+                <h4> How many kilometers of coastline does Haifa boast?</h4>
+                    <div>
+                        <label for="days">KM: </label>
+                        <input type="number" name="question2" id="question2">
+                        <br>
+                        <br>
+                        <button id="to_question3" onclick="to_question3();"> Next </button>
+                    </div>
+            </div>
+        </div>
+
+        <div class="containter">
+            <div class="questionThree display-none" id="questionThree">
+                <h2>Question three!</h2>
+                <h4> What year was Haifa founded? </h4>
+                <div>
+                    <label for="answer1"> 1761 </label>
+                    <input type="radio" name="question3" id = "answer1" value="answer1">
+                </div>
+                <div>
+                    <label for="answer2"> 3rd Century CE </label>
+                    <input type="radio" name="question3" id = "answer2" value="answer2">
+                </div>
+                <div>
+                    <label for="answer3"> 1948 </label>
+                    <input type="radio" name="question3" id = "answer3" value="answer3">
+                    <div>
+                        <label for="answer4"> 1868 </label>
+                        <input type="radio" name="question4" id = "answer 4" value="answer4">
+                    </div>
+                </div>
+                <br>
+                <button id="to_question4" onclick="to_question4();"> Next </button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="questionFour display-none" id="questionFour">
+                <h2>Question four!</h2>
+                <h4> What is the name of Haifa's soccer team? (HINT: Choose more than one answer)</h4>
+                <div>
+                    <label for="hello"> Beitar </label>
+                    <input type="checkbox" name="question4" id="quest4_ans1" value="hello">
+                </div>
+                <div>
+                    <label for="goodbye"> Maccabi </label>
+                    <input type="checkbox" name="question4" id="quest4_ans2" value="goodbye">
+                </div>
+                <div>
+                    <label for="peace"> HaPoel </label>
+                    <input type="checkbox" name="question4" id="quest4_ans3" value="peace">
+                </div>
+                <div>
+                    <label for="don'tknow"> All of the above </label>
+                    <input type="checkbox" name="question4" id="quest4_ans4" value="don'tknow">
+                </div>
+                <br>
+                <button id="to_question5" onclick="to_question5();"> Next </button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="questionFive display-none" id="questionFive">
+                <h2>Question five!</h2>
+                <h4> What does Haifa own that no other city in Israel has?</h4>
+                <div>
+                    <input type="text" id="question5">
+                </div>
+                <br>
+                <div class="submit display-none" id="submit">
+                        <input id="button" type="button" value="submit!" onclick="check();">
+                    </div>
+                </div>
+            </div>
+    </div>
+
+ 
+
+    <div id="after_submit">
+        <p id="number_correct"> </p>
+        <p id="message"> </p>
+    </div>
+      <br>
+    <br>
+    <br>
+    <footer class="bg-blue">
+<a href="contact.html" class=button>Contact</a>
+
+<a href="https://www.haifa.muni.il/English/Culture1/Pages/default.aspx" class="fa fa-globe"></a>        
+<a href="https://www.facebook.com/haifamuni?ref=ts" class="fa fa-facebook"></a>
+<a href="http://www.instagram.com/haifacity/" class="fa fa-instagram"></a>
+<a href="https://twitter.com/visithaifa" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/c/%D7%97%D7%99%D7%A4%D7%94%D7%97%D7%99%D7%A4%D7%94/" class="fa fa-youtube"></a>
+
+    </footer>
+        <script src="main.js"></script>
+  </body>
+
+  </html>
