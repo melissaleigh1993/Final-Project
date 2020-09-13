@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@media all and (max-device-width: 500px) {
+    position: absolute;
+    align: center;
+}
+
 body {
       background-color: #87CEFA;
 }
@@ -123,13 +128,13 @@ nav a:hover {
 
 nav ul
   {
+      display: flex;
 		   list-style: none;
            padding: 0;
            margin: 0;
   }
 
 nav ul li {
-float: left;
  list-style: none;
 position: relative;
 
@@ -210,6 +215,10 @@ color: blue;
   margin: auto;
 }
 
+.mySlides >img {
+    height: 60vh;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -235,6 +244,11 @@ color: blue;
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+      border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
