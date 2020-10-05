@@ -60,16 +60,16 @@ function to_question5() {
 function check() {
 document.getElementById("questionFive").classList.add("display-none");
 
-var question1 = document.getElementById("question1").value; 
-var question2 = document.getElementById("question2").value;
-var answer2 = document.getElementById("answer2");
-var quest4_ans1 = document.getElementById("quest4_ans1");
-var quest4_ans2 = document.getElementById("quest4_ans2");
-var quest4_ans3 = document.getElementById("quest4_ans3");
-var question5 = document.getElementById("question5").value;
+let question1 = document.getElementById("question1").value; 
+let question2 = document.getElementById("question2").value;
+let answer2 = document.getElementById("answer2");
+let quest4_ans1 = document.getElementById("quest4_ans1");
+let quest4_ans2 = document.getElementById("quest4_ans2");
+let quest4_ans3 = document.getElementById("quest4_ans3");
+let question5 = document.getElementById("question5").value;
 
-var points = 0; 
-var points = parseFloat(points)
+let startPoints = 0; 
+let points = parseFloat(startPoints)
 
 
 question1 = question1.toLowerCase()
