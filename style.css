@@ -1,7 +1,7 @@
 * {
   text-align: center;
   text-decoration: none;
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media all and (max-device-width: 500px) {
@@ -22,17 +22,30 @@ body {
        white 0%, white 75%,       
        #0000CD 0%);
   color: #00BFFF;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;}
 
-[class*=col-6] {
+[class*=col-6] .food {
     text-align: center;
     margin: auto;
     padding: inherit;
+    text-align: center;
+    font-family: Montserrat;
+    line-height: 1.5rem;
+    padding: 15px;
 }
+
+[class*=col-6] img{
+    height: auto;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .bg-blue {
       background-color: #87CEFA;
-        padding: 10px;
+      padding: 10px;
 
 }
 
@@ -123,29 +136,29 @@ nav a:hover {
   background-color: white;
   color: #0000CD;
   transition: 1s ease-in-out;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 nav ul
   {
-      display: flex;
-		   list-style: none;
-           padding: 0;
-           margin: 0;
+   display: flex;
+   list-style: none;
+   padding: 0;
+   margin: 0;
   }
 
 nav ul li {
- list-style: none;
-position: relative;
+    list-style: none;
+    position: relative;
 
 }
 
 nav ul li a {
-	text-decoration: none;
+  text-decoration: none;
   color: white;
   background-color: blue;
   padding: 1rem;
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
   display: block;
   border: 1px solid black;
   text-transform: uppercase;
@@ -159,36 +172,36 @@ nav ul li ul {
 	position: absolute;
 	padding: 10px;
 	border-radius: 0px 0px 4px 4px;
-        z-index: 1;
+    z-index: 1;
 
 }
 
 nav ul li:hover ul {
 	display: block;
-      transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
 
 }
 
 nav ul li ul li {
-width: 125px;
+    width: 125px;
 	border-radius: 0px 0px 4px 4px;
 }
 
 nav ul li ul li a {
-	  padding: 0.7rem;
+	padding: 0.7rem;
 
 }
 
 nav ul li ul li a:hover {
-color: blue;
-  border-color: blue;
+    color: blue;
+    border-color: blue;
 
 }
 
 .button {
   text-decoration: none;
   color: blue;
-    border-color: black;
+  border-color: black;
   text-transform: uppercase;
   font-family: Montserrat;
   background-color: #FFFAF0;
@@ -201,9 +214,9 @@ color: blue;
 .button:hover {
   text-transform: uppercase;
   font-family: Montserrat;
-    transition: 1s ease-in-out;
-    text-decoration: none;
-    margin: 1rem;
+  transition: 1s ease-in-out;
+  text-decoration: none;
+  margin: 1rem;
   padding: 0.5rem;
   border: 1px solid;
   border-radius: 3px;
@@ -221,7 +234,7 @@ color: blue;
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
 
 /* Next & previous buttons */
@@ -248,7 +261,7 @@ color: blue;
 
 .prev {
     left: 0;
-      border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -258,32 +271,32 @@ color: blue;
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
+    color: #f2f2f2;
+    font-size: 15px;
     font-family: Montserrat;
-font-weight: 500;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    font-weight: 500;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+    background-color: #717171;
 }
 
 /* Fading animation */
@@ -484,4 +497,42 @@ form .submit:hover {
 
 #after_submit {
     visibility: hidden; 
+}
+
+.weather {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient (rgb(47,150,163), rgb(48,64,143));
+    font-family: sans-serif;
+    color: white;
+}
+
+.location, .temperature {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.temperature {
+    flex-direction: column;
+}
+
+.degree-section {
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+}
+
+.degree-section span, .temperature-degree {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.degree-section h5 {
+    font-size: 40px;
 }
